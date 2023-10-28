@@ -59,8 +59,12 @@
   .main-img{
     width: 400px;
     height: 400px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+  }
+}
+
+@media(max-width:550px){
+  .main-img{
+    width: 320px;
+    height: 320px;
   }
 }

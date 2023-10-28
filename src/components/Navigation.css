@@ -37,6 +37,11 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 50px;
+    cursor: pointer;
+}
+
+.navigation-block-nav p:hover{
+    color: rgb(113, 255, 243);
 }
 
 .navigation-block-btn-login{
@@ -50,6 +55,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    transition: all 0.5s;
 }
 
 .navigation-block-btn-registered{
@@ -61,6 +68,14 @@
     font-size: 18px;
     color: white;
     border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.navigation-block-btn-registered:hover,
+.navigation-block-btn-login:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
 }
 
 .navigation-block-mobMenu{
@@ -94,7 +109,6 @@
     .navigation-block-nav{
         display: none;
     }
-    
     .navigation-block-btn{
         width: 175px;
         height: 58px;
@@ -103,7 +117,6 @@
         align-items: center;
         gap: 17.26px;
     }
-    
     .navigation-block-btn-login{
         width: 57px;
         height: 25px;
@@ -113,7 +126,6 @@
         border: none;
         outline: none;
     }
-    
     .navigation-block-btn-registered{
         width: 90px;
         height: 100%;
@@ -137,7 +149,7 @@
     }
     .navigation-block-mobMenu-menu{
         width: 150px;
-        height: 200px;
+        height: 250px;
         border-radius: 10px;
         background-color: #102647;
         position: absolute;
@@ -145,6 +157,9 @@
         top: 10px;
         margin-right: 10px;
         padding: 10px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
     }
     .navigation-block-mobMenu-menu-close{
         color: white;
@@ -158,5 +173,36 @@
     .navigation-block-mobMenu-menu p{
         color: white;
         font-size: 18px;
+        cursor: pointer;
+    }
+    .navigation-block-mobMenu-menu p:hover{
+        color: rgb(113, 255, 243);
     }
 }
+
+@media(max-width:427px){
+    .navigation-block-mobMenu-menu{
+        top: 65px;
+    }
+    .active{
+        display: none;
+    }
+    .activeNavBlock{
+        position: absolute;
+        right: 0;
+    }
+    .navigation-block-btn{
+        gap: 10px;
+    }
+  }
+
+  @media(max-width:320px){
+    .navigation-block-mobMenu-img{
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+    .navigation-block-btn{
+        gap: 5px;
+    }
+  }

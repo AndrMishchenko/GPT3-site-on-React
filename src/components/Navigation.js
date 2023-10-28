@@ -5,10 +5,13 @@ import menu from '../assets/menu.svg'
 
 const Navigation = () => {
 
-    const [mobileMenu, setMobileMenu] = useState(false)
+    const [mobileMenu, setMobileMenu] = useState(false);
 
     const mobMenu = () => {
         setMobileMenu(true)
+        if(mobileMenu === true){
+            setMobileMenu(false)
+        }
     }
 
   return (
@@ -21,7 +24,7 @@ const Navigation = () => {
             <p>Case Studies</p>
             <p>Library</p>
         </nav>
-        <div className='navigation-block-btn'>
+        <div className={`navigation-block-btn ${mobileMenu === true ? 'activeNavBlock' : ''}`}>
             <button className='navigation-block-btn-login'>Sign in</button>
             <button className='navigation-block-btn-registered'>Sing up</button>
         </div>
@@ -29,7 +32,7 @@ const Navigation = () => {
             <img className={`navigation-block-mobMenu-img ${mobileMenu === true ? 'active' : ''}`} src={menu} onClick={mobMenu}></img>
             {mobileMenu === true && (
                 <div className='navigation-block-mobMenu-menu'>
-                    <div className='navigation-block-mobMenu-menu-close'>X</div>
+                    <div className='navigation-block-mobMenu-menu-close' onClick={mobMenu}>X</div>
                     <p>Home</p>
                     <p>What is GPT?</p>
                     <p>Opne AI</p>
