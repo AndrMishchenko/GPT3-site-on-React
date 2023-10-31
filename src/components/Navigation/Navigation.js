@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import './Navigation.css'
-import navLogo from '../assets/GPT-3.svg'
-import menu from '../assets/menu.svg'
+import '../Navigation/Navigation.css'
+import navLogo from '../../assets/GPT-3.svg'
+import menu from '../../assets/menu.svg'
 
 const Navigation = () => {
 

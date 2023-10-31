@@ -1,0 +1,81 @@
+.parthners-block{
+    margin: 0 auto;
+    height: 30px;
+    width: 90%;
+    height: 40px;
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+}
+.parthners-block-box{
+    width: 671px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.parthners-block-box-firstImg{
+    background-image: url(../../assets/google.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 40px;
+}
+.parthners-block-box-secondImg{
+    background-image: url(../../assets/slack.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 40px;
+}
+.parthners-block-box-thirdImg{
+    background-image: url(../../assets/atlassian.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 40px;
+}
+.parthners-block-box-fourthImg{
+    background-image: url(../../assets/dropbox.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 40px;
+}
+.parthners-block-box-fifthImg{
+    background-image: url(../../assets/shopify.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 40px;
+}
+@media(max-width:1024px){
+    .parthners-block{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 770px){
+    .parthners-block,
+    .parthners-block-box{
+        width: 100%;
+        padding: 0 5px;
+    }
+    .parthners-block-box-firstImg,
+    .parthners-block-box-secondImg,
+    .parthners-block-box-thirdImg,
+    .parthners-block-box-fourthImg,
+    .parthners-block-box-fifthImg{
+        width: 15%;
+    }
+}
+
+@media(max-width:427px){
+}
+
+@media(max-width:320px){
+}

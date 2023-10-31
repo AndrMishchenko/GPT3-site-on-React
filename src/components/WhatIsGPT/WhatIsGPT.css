@@ -1,0 +1,104 @@
+.whatIsGPT-block{
+    height: 695px;
+    width: 81.3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8%;
+    border: 1px solid red;
+    margin-top: 126.85px;
+    background-color: #0F4279;
+    overflow: hidden;
+    position: relative;
+}
+
+.whatIsGPT-block::after{
+    content: '';
+    position: absolute;
+    top: -120px;
+    left: -120px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    filter: blur(40px);
+    background-color: #1B78DE;
+}
+
+.whatIsGPT-block::before{
+    content: '';
+    position: absolute;
+    bottom: -120px;
+    right: -120px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    filter: blur(40px);
+    background-color: #1B78DE;
+}
+
+.whatIsGPT-block-box{
+    border: 1px solid yellow;
+    width: 91%;
+    height: 575px;
+    z-index: 10;
+    padding: 10px 10px;
+}
+
+.whatIsGPT-block-box-line{
+    width: 38px;
+    height: 3px;
+    background: linear-gradient(to right, #AE67FA, #F49867);
+}
+
+.whatIsGPT-block-box-firstString{
+    width: 100%;
+    min-height: 13%;
+    margin-top: 5px;
+    border: 1px solid palevioletred;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 91px;
+}
+
+.whatIsGPT-block-box-firstString-title{
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 2px;
+}
+
+.whatIsGPT-block-box-firstString-text{
+    display: flex;
+    align-items: center;
+    color: #81AFDD;
+    font-size: 16px;
+    width: 70.321%;
+}
+
+.whatIsGPT-block-box-secondString{
+    height: 90px;
+    border: 1px solid orange;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.whatIsGPT-block-box-secondString-text{
+    color: #FF8A71;
+    font-size: 16px;
+}
+
+.whatIsGPT-block-box-thirdString{
+    margin-top: 92px;
+    width: 100%;
+    height: 35%;
+    display: flex;
+}
+
+.whatIsGPT-block-box-thirdString-firstBox,
+.whatIsGPT-block-box-thirdString-secondBox,
+.whatIsGPT-block-box-thirdString-thirdBox{
+    padding: 5px 0;
+    width: 33.3%;
+    border: 1px solid lightblue;
+}
