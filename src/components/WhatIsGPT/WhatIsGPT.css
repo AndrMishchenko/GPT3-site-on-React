@@ -1,11 +1,10 @@
 .whatIsGPT-block{
-    height: 695px;
+    height: 625px;
     width: 81.3%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 8%;
-    border: 1px solid red;
+    margin-left: 8%;
     margin-top: 126.85px;
     background-color: #0F4279;
     overflow: hidden;
@@ -37,9 +36,8 @@
 }
 
 .whatIsGPT-block-box{
-    border: 1px solid yellow;
     width: 91%;
-    height: 575px;
+    min-height: 83%;
     z-index: 10;
     padding: 10px 10px;
 }
@@ -54,7 +52,6 @@
     width: 100%;
     min-height: 13%;
     margin-top: 5px;
-    border: 1px solid palevioletred;
     display: flex;
     justify-content: space-between;
     margin-bottom: 91px;
@@ -76,11 +73,14 @@
 }
 
 .whatIsGPT-block-box-secondString{
-    height: 90px;
-    border: 1px solid orange;
+    min-height: 16.4%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.whatIsGPT-block-box-secondString-title{
+    width: 45.7%;
 }
 
 .whatIsGPT-block-box-secondString-text{
@@ -100,5 +100,84 @@
 .whatIsGPT-block-box-thirdString-thirdBox{
     padding: 5px 0;
     width: 33.3%;
-    border: 1px solid lightblue;
+}
+
+.whatIsGPT-block-box-thirdString-firstBox h2,
+.whatIsGPT-block-box-thirdString-secondBox h2,
+.whatIsGPT-block-box-thirdString-thirdBox h2{
+    margin-top: 15px;
+    margin-bottom: 40px;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.whatIsGPT-block-box-thirdString-firstBox p,
+.whatIsGPT-block-box-thirdString-secondBox p,
+.whatIsGPT-block-box-thirdString-thirdBox p{
+    color: #81AFDD;
+    font-size: 16px;
+}
+
+@media(max-width:1024px){
+    .whatIsGPT-block{
+        width: 97.5%;
+        margin: 0 auto;
+    }
+    .whatIsGPT-block-box-secondString-title{
+        font-size: 30px;
+    }
+}
+
+@media(max-width:770px){
+    .whatIsGPT-block{
+        width: 97%;
+        height: 100%;
+        margin-left: 0;
+        margin: 0 auto;
+    }
+    .whatIsGPT-block-box{
+        width: 100%;
+    }
+    .whatIsGPT-block-box-firstString{
+        margin-bottom: 40px;
+        flex-direction: column;
+    }
+    .whatIsGPT-block-box-firstString-title{
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .whatIsGPT-block-box-firstString-text{
+        width: 100%;
+        text-align: center;
+    }
+    .whatIsGPT-block-box-secondString{
+        flex-direction: column;
+    }
+    .whatIsGPT-block-box-secondString-title{
+        width: 100%;
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .whatIsGPT-block-box-thirdString{
+        margin-top: 40px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .whatIsGPT-block-box-thirdString-firstBox,
+    .whatIsGPT-block-box-thirdString-secondBox,
+    .whatIsGPT-block-box-thirdString-thirdBox{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:427px){
+    .whatIsGPT-block{
+        width: 95%;
+    }
+    .whatIsGPT-block-box-secondString-title{
+        font-size: 22px;
+    }
 }

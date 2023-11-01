@@ -17,11 +17,19 @@ const WhatIsGPT = () => {
             <div className='whatIsGPT-block-box-thirdString'>
                 <div className='whatIsGPT-block-box-thirdString-firstBox'> 
                     <div className='whatIsGPT-block-box-line'></div>
-                    <p>Chatbots</p>
+                    <h2>Chatbots</h2>
                     <p>We so opinion friends me message as delight. Whole front do of plate heard oh ought. </p>
                 </div>
-                <div className='whatIsGPT-block-box-thirdString-secondBox'></div>
-                <div className='whatIsGPT-block-box-thirdString-thirdBox'></div>
+                <div className='whatIsGPT-block-box-thirdString-secondBox'>
+                    <div className='whatIsGPT-block-box-line'></div>
+                    <h2>Knowledgebase</h2>
+                    <p>At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b</p>
+                </div>
+                <div className='whatIsGPT-block-box-thirdString-thirdBox'>
+                    <div className='whatIsGPT-block-box-line'></div>
+                    <h2>Education</h2>
+                    <p>At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b</p>
+                </div>
             </div>
         </div>
     </div>
