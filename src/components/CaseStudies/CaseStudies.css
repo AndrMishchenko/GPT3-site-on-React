@@ -1,0 +1,11 @@
+.test{
+    width: 81.3%;
+    min-height: 70.1vh;
+    margin-left: 8%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    position: relative;
+    border: 1px solid yellow;
+    margin-top: 45px;
+}

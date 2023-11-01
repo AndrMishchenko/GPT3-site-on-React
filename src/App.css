@@ -11,6 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .main-img{
@@ -21,10 +22,28 @@
   left: -100px;
 }
 
+.second-img{
+  width: 701px;
+  height: 496px;
+  position: absolute;
+  right: -500px;
+  border-radius: 50%;
+  top: 500px;
+}
+
+.third-img{
+  width: 777px;
+  height: 777px;
+  position: absolute;
+  left: -100px;
+  top: 1712px;
+}
+
 .content-box{
   width: 1440px;
   min-height: 100vh;
   z-index: 1;
+  position: relative;
 }
 
 .whatIsGPT-block-box-secondString-title{
@@ -47,6 +66,9 @@
     top: 0px;
     left: 0px;
   }
+  .second-img{
+    right: -400px;
+  }
 }
 
 @media(max-width:770px){
@@ -56,6 +78,10 @@
     position: absolute;
     top: 0px;
     left: 0px;
+  }
+  .second-img{
+    right: -300px;
+    top: 300px;
   }
 }
 

@@ -9,6 +9,7 @@
     background-color: #0F4279;
     overflow: hidden;
     position: relative;
+    margin-bottom: 201px;
 }
 
 .whatIsGPT-block::after{
@@ -178,6 +179,6 @@
         width: 95%;
     }
     .whatIsGPT-block-box-secondString-title{
-        font-size: 22px;
+        font-size: 34px;
     }
 }
