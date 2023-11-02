@@ -8,6 +8,7 @@ import Parthners from './components/Parthners/Parthners';
 import WhatIsGPT from './components/WhatIsGPT/WhatIsGPT';
 import OpenAI from './components/OpenAI/OpenAI';
 import CaseStudies from './components/CaseStudies/CaseStudies';
+import Library from './components/Library/Library';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <WhatIsGPT/>
         <OpenAI/>
         <CaseStudies/>
+        <Library/>
       </div>
       <img src={blure2} className='third-img'></img>
     </div>

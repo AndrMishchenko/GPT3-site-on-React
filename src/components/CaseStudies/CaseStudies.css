@@ -1,11 +1,132 @@
-.test{
+.caseStudies-block{
     width: 81.3%;
     min-height: 70.1vh;
     margin-left: 8%;
     display: flex;
     justify-content: space-between;
-    padding: 5px 0;
     position: relative;
-    border: 1px solid yellow;
     margin-top: 45px;
+    margin-bottom: 154.47px;
+}
+
+.caseStudies-block-img{
+    position: absolute;
+    height: 100%;
+    width: 46.719%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caseStudies-block-img img{
+    width: 530px;
+    height: 100%;
+    position: absolute;
+}
+
+.caseStudies-block-text{
+    position: absolute;
+    height: 55.201%;
+    width: 41%;
+    right: 0;
+    top: 239px;
+}
+
+.caseStudies-block-text-firstPar{
+    font-size: 16px;
+    color: #71E5FF;
+    margin-bottom: 10px;
+}
+
+.caseStudies-block-text h2{
+    background: linear-gradient(to right, #AE67FA, #F49867);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 34px;
+    margin-bottom: 23px;
+}
+
+.caseStudies-block-text-secondPar{
+    color: #81AFDD;
+    font-size: 16px;
+    margin-bottom: 31px;
+}
+
+.caseStudies-block-text-thirdPar{
+    color: #FF8A71;
+    font-size: 16px;
+}
+
+@media(max-width:1024px){
+    .caseStudies-block{
+        width: 97%;
+        margin-left: 0%;
+        margin: 0 auto;
+        margin-top: 45px;
+        margin-bottom: 154.47px;
+    }    
+    .caseStudies-block-img img{
+        width: 450px;
+    }
+    .caseStudies-block-text{
+        height: 65%;
+        top: 200px;
+    }
+}
+
+@media(max-width:770px){
+    .caseStudies-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: static;
+    }
+    .caseStudies-block-img{
+        position: static;
+        height: 400px;
+        width: 400px;
+        margin: 0 auto;
+    }
+    .caseStudies-block-img img{
+        height: 400px;
+        width: 400px;
+    }
+    .caseStudies-block-text{
+        position: static;
+        height: 55.201%;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .caseStudies-block-text-firstPar,
+    .caseStudies-block-text h2,
+    .caseStudies-block-text-secondPar,
+    .caseStudies-block-text-thirdPar{
+        text-align: center;
+    }
+}
+
+@media(max-width:427px){
+    .caseStudies-block-img{
+        position: static;
+        height: 320px;
+        width: 320px;
+        margin: 0 auto;
+    }
+    .caseStudies-block-img img{
+        height: 320px;
+        width: 320px;
+    }
+}
+
+@media(max-width:375px){
+    .caseStudies-block-img{
+        position: static;
+        height: 300px;
+        width: 300px;
+        margin: 0 auto;
+    }
+    .caseStudies-block-img img{
+        height: 300px;
+        width: 300px;
+    }
 }
